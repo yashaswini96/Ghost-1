@@ -44,7 +44,8 @@ const membersService = {
         cookieKeys: [settingsCache.get('theme_session_secret')],
         cookieName: 'ghost-members-ssr',
         cookieCacheName: 'ghost-members-ssr-cache',
-        getMembersApi: () => membersService.api
+        getMembersApi: () => membersService.api,
+        dangerousRemovalOfSignedCookie: true
     })
 };
 
